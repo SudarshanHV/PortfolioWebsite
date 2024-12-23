@@ -1,89 +1,10 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}Coming Soon{% endblock %}</title>
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-
-        header {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background-color: #333;
-            color: #fff;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0.5em 1em;
-        }
-
-        .hamburger {
-            cursor: pointer;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            width: 25px;
-            height: 20px;
-        }
-
-        .hamburger div {
-            background-color: #fff;
-            height: 3px;
-            width: 100%;
-            border-radius: 5px;
-        }
-
-        .menu {
-            display: none;
-            flex-direction: column;
-            align-items: center;
-            position: fixed;
-            top: 50px;
-            right: 10px;
-            background: white;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-            border-radius: 5px;
-        }
-
-        .menu a {
-            text-decoration: none;
-            color: #333;
-            padding: 1em 2em;
-            display: block;
-            transition: background 0.3s ease;
-        }
-
-        .menu a:hover {
-            background: #ddd;
-        }
-
-        .menu.active {
-            display: flex;
-        }
-
-        main {
-            text-align: center;
-        }
-
-        main h1 {
-            font-size: 3em;
-            font-weight: bold;
-        }
-    </style>
+    <title>Coming Soon</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
@@ -95,12 +16,12 @@
         </div>
     </header>
     <div class="menu" id="menu">
-        <a href="{% url 'about' %}">About</a>
-        <a href="{% url 'portfolio' %}">Portfolio</a>
-        <a href="{% url 'contact' %}">Contact</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
     </div>
     <main>
-        <h1>{% block content %}Coming Soon!{% endblock %}</h1>
+        <h1>Coming Soon!</h1>
     </main>
     <script>
         function toggleMenu() {

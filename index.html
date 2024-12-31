@@ -82,11 +82,36 @@
             font-size: 3em;
             font-weight: bold;
         }
+
+        .vertical-line {
+            position: fixed;
+            left: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .vertical-line::before {
+            content: "";
+            width: 2px;
+            height: 200px;
+            background-color: #333;
+            display: block;
+        }
+
+        .icon {
+            margin: 10px 0;
+            color: #333;
+            text-decoration: none;
+            font-size: 24px;
+        }
     </style>
 </head>
 <body>
     <header>
-        <div>Sudarshan's Portfolio</div>
+        <div>Portfolio</div>
         <div class="hamburger" onclick="toggleMenu()">
             <div></div>
             <div></div>
@@ -97,6 +122,12 @@
         <a href="about.html">About</a>
         <a href="portfolio.html">Portfolio</a>
         <a href="contact.html">Contact</a>
+    </div>
+    <div class="vertical-line">
+        <a href="#" class="icon">📸</a>
+        <a href="#" class="icon">🔗</a>
+        <a href="#" class="icon">🐙</a>
+        <a href="#" class="icon">📧</a>
     </div>
     <main>
         <h1>Coming Soon!</h1>

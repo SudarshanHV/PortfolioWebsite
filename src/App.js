@@ -8,6 +8,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Portfolio Website Coming Soon!
+          Reach out to me on Linkedin (https://linkedin.com/in/sudarshanhv)
         </p>
       </header>
     </div>
